@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home Page
+    </ion-title>
+    <ion-buttons right>
+      <button (click)="logout()" clear ion-button>
+        logout
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-avatar item-center>
+      <img [src]="aUser.sProfilePicture" alt="" style="width:50%; border-radius:50%; margin: 20px auto">
+    </ion-avatar>
+    <ion-card-content center>
+      <h2 style="text-align: center">
+        {{ aUser.sFullName }}
+      </h2>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
